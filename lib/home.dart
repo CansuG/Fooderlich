@@ -31,8 +31,7 @@ class HomeState extends State<Home> {
           ),
         ),
         // 2
-        // TODO : Replace body
-        body: pages[tabManager.selectedTab],
+        body: IndexedStack(index: tabManager.selectedTab, children: pages),
         bottomNavigationBar: BottomNavigationBar(
           selectedItemColor:
               Theme.of(context).textSelectionTheme.selectionColor,
