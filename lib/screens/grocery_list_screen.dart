@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import '../models/grocery_item.dart';
 import '../components/grocery_tile.dart';
 import '../models/grocery_manager.dart';
 import 'grocery_item_screen.dart';
@@ -22,7 +21,6 @@ class GroceryListScreen extends StatelessWidget {
         itemCount: groceryItems.length,
         itemBuilder: (context, index) {
           final item = groceryItems[index];
-          // TODO 28: Wrap in a Dismissable
           // 1
           return Dismissible(
             // 6
